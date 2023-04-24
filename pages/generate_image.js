@@ -34,7 +34,7 @@ export default function Generate() {
   const [content, setcontent] = useState(true);
   const [errorState, seterrorState] = useState(false);
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 800 });
   }, []);
   const postData = async () => {
     try {
@@ -88,9 +88,7 @@ export default function Generate() {
             className="imghero2"
             alt="logo"
             data-aos="fade-zoom-in"
-            data-aos-offset="200"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="600"
           />
         </Link>
       </div>
@@ -391,10 +389,10 @@ export default function Generate() {
       )}
       <div className="flex flex-col gap-4 items-center customfixed">
         <Link href={"https://github.com/Rabenherz112"} target="blank">
-          <AiFillGithub className=" text-4xl" />
+          <AiFillGithub className=" text-4xl text-black" />
         </Link>
         <Link href={"https://discord.gg/ySk5eYrrjG"} target="blank">
-          <FaDiscord className="text-4xl" />
+          <FaDiscord className="text-4xl text-black" />
         </Link>
       </div>
     </main>

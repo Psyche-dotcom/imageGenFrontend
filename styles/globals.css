@@ -18,13 +18,14 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  /* background: linear-gradient(
+  background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb)); */
-  background-color: white;
+    rgb(var(--background-start-rgb));
+  /* background-color: white; */
+  width: auto;
 }
 .imghero2 {
   max-width: 100%;

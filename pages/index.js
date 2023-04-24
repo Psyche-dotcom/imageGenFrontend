@@ -20,9 +20,7 @@ const Index = () => {
           className="imghero2"
           alt="logo"
           data-aos="fade-zoom-in"
-          data-aos-offset="200"
           data-aos-easing="ease-in-sine"
-          data-aos-duration="600"
         />
       </Link>
       <h1
@@ -30,7 +28,6 @@ const Index = () => {
         className="text-center text-6xl font-bold mb-2 demotext2"
         data-aos="flip-left"
         data-aos-delay="100"
-        data-aos-anchor=".example-selector"
       >
         Welcome to Ravenhub&apos;s
       </h1>
@@ -39,15 +36,10 @@ const Index = () => {
         className="text-center text-4xl font-bold mb-5"
         data-aos="flip-right"
         data-aos-delay="200"
-        data-aos-anchor=".demotext2"
       >
         SCP ACS Image Generator
       </h1>
-      <p
-        className="text-2xl mb-10 text-black"
-        data-aos="fade"
-        data-aos-anchor-placement="top-center"
-      >
+      <p className="text-2xl mb-10 text-center text-black" data-aos="fade">
         Create your own custom ACS Label in just a few seconds
       </p>
       <div
@@ -84,7 +76,7 @@ const Index = () => {
       </h1>
       <div
         className="flex flex-col gap-4
-       text-center w-full justify-center  bg-black p-12 rounded-xl mb-14"
+       text-center w-full justify-center md:w-4/5 bg-black p-12 rounded-xl mb-14"
         data-aos="fade"
       >
         <p className="text-white" data-aos="fade-left">
@@ -120,10 +112,10 @@ const Index = () => {
       </div>
       <div className="flex flex-col gap-4 items-center customfixed">
         <Link href={"https://github.com/Rabenherz112"} target="blank">
-          <AiFillGithub className=" text-4xl" />
+          <AiFillGithub className=" text-4xl text-black" />
         </Link>
         <Link href={"https://discord.gg/ySk5eYrrjG"} target="blank">
-          <FaDiscord className="text-4xl" />
+          <FaDiscord className="text-4xl text-black" />
         </Link>
       </div>
     </main>

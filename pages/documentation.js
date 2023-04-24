@@ -5,14 +5,16 @@ import Image from "next/image";
 import CodeEmbed from "../components/CodeEmbed";
 import "aos/dist/aos.css";
 import Aos from "aos";
+import { AiFillGithub } from "react-icons/ai";
+import { FaDiscord } from "react-icons/fa";
 import { useEffect } from "react";
 
 const Documentation = () => {
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 800 });
   }, []);
   return (
-    <main className="flex min-h-screen flex-col gap-6 p-8 md:p-16">
+    <main className="flex min-h-screen items-center justify-center flex-col gap-6 p-8 md:p-16">
       <div className="relative flex flex-col place-items-center ">
         <Link href={"/"}>
           <Image
@@ -21,9 +23,7 @@ const Documentation = () => {
             className="imghero2"
             alt="logo"
             data-aos="fade-zoom-in"
-            data-aos-offset="200"
             data-aos-easing="ease-in-sine"
-            data-aos-duration="600"
           />
         </Link>
       </div>
@@ -34,7 +34,7 @@ const Documentation = () => {
         Information About the API?
       </h1>
       <div
-        className="flex flex-col w-full bg-black p-12 rounded-xl mb-14"
+        className="flex flex-col w-full md:w-4/5 bg-black p-12 md:p-20 rounded-xl mb-14"
         data-aos="fade"
       >
         <ul className="text-white list-disc" data-aos="fade-left">
@@ -96,6 +96,14 @@ const Documentation = () => {
       </h1>
       <div>
         <CodeEmbed />
+      </div>
+      <div className="flex flex-col gap-4 items-center customfixed">
+        <Link href={"https://github.com/Rabenherz112"} target="blank">
+          <AiFillGithub className=" text-4xl text-black" />
+        </Link>
+        <Link href={"https://discord.gg/ySk5eYrrjG"} target="blank">
+          <FaDiscord className="text-4xl text-black" />
+        </Link>
       </div>
     </main>
   );
