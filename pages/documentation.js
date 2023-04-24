@@ -14,7 +14,7 @@ const Documentation = () => {
     Aos.init({ duration: 800 });
   }, []);
   return (
-    <main className="flex min-h-screen items-center justify-center flex-col gap-6 p-8 md:p-16 overflow-hidden">
+    <main className="flex min-h-screen items-center justify-center flex-col gap-6 p-8 md:p-16 overflow-x-hidden">
       <div className="relative flex flex-col place-items-center ">
         <Link href={"/"}>
           <Image

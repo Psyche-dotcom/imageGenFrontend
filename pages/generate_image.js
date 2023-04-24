@@ -79,7 +79,7 @@ export default function Generate() {
     }
   };
   return (
-    <main className="flex min-h-screen flex-col items-center gap-6 p-8 md:p-16 overflow-hidden">
+    <main className="flex min-h-screen flex-col items-center gap-6 p-8 md:p-16 overflow-x-hidden">
       <div className="relative mb-12 flex flex-col place-items-center ">
         <Link href={"/"}>
           <Image
@@ -107,7 +107,7 @@ export default function Generate() {
                 <TextInputField
                   id="1"
                   type="text"
-                  placeholder="Enter a number between 100-9999"
+                  placeholder="Number between 100-9999"
                   setstate={(e) => setSelectedOption2(e)}
                   errorState={errorState}
                   errorMessage={"Please enter a number between 100-9999"}
@@ -150,7 +150,7 @@ export default function Generate() {
                   onClick={() => {
                     const stepUser1 = document.querySelector("#stepUser1");
                     const stepUser2 = document.querySelector("#stepUser2");
-                    if (selectedOption2.length < 1) {
+                    if (selectedOption2.length < 3) {
                       seterrorState(true);
                       stepUser1.style.display = "flex";
                     } else {
@@ -325,7 +325,7 @@ export default function Generate() {
                   setSelectedOption={(e) => setSelectedOption9(e)}
                 />
                 <div className="flex flex-col gap-4">
-                  <div className="flex gap-10 items-center">
+                  <div className="flex flex-col md:flex-row gap-10 items-center">
                     <div
                       onClick={() => {
                         const stepUser1 = document.querySelector("#stepUser1");

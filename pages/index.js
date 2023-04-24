@@ -12,7 +12,7 @@ const Index = () => {
     Aos.init({ duration: 2000 });
   }, []);
   return (
-    <main className="flex min-h-screen flex-col items-center py-4 px-8 md:px-16 md:py-4 overflow-hidden ">
+    <main className="flex min-h-screen flex-col items-center py-4 px-8 md:px-16 md:py-4 overflow-x-hidden">
       <Link href={"/"}>
         <Image
           src={imglogo}
