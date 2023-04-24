@@ -1,0 +1,259 @@
+{
+    "name": "Extended Secondary Classes",
+    "credits": "ShineShadowD",
+    "clearance-level": {
+        "1": {
+            "name": "Clearance Level 1",
+            "dname": "LEVEL1",
+            "abbr": "UNRESTRICTED", 
+            "shortcode": "UR",
+            "color": "rgba(0, 159, 107, 1)",
+            "image": null
+        },
+        "2": {
+            "name": "Clearance Level 2",
+            "dname": "LEVEL2",
+            "abbr": "RESTRICTED", 
+            "shortcode": "RS",
+            "color": "rgba(0, 135, 189, 1)",
+            "image": null
+        },
+        "3": {
+            "name": "Clearance Level 3",
+            "dname": "LEVEL3",
+            "abbr": "CONFIDENTIAL", 
+            "shortcode": "CF",
+            "color": "rgba(255, 211, 0, 1)",
+            "image": null
+        },
+        "4": {
+            "name": "Clearance Level 4",
+            "dname": "LEVEL4",
+            "abbr": "SECRET", 
+            "shortcode": "SC",
+            "color": "rgba(255, 109, 0, 1)",
+            "image": null
+        },
+        "5": {
+            "name": "Clearance Level 5",
+            "dname": "LEVEL5",
+            "abbr": "TOP SECRET", 
+            "shortcode": "TS",
+            "color": "rgba(196, 2, 51, 1)",
+            "image": null
+        },
+        "6": {
+            "name": "Clearance Level 6",
+            "dname": "LEVEL6",
+            "abbr": "COSMIC TOP SECRET", 
+            "shortcode": "CTS",
+            "color": "rgba(12, 12, 12, 1)",
+            "image": "extras/galactic.jpg"
+        }
+    },
+    "containment-class": {
+        "safe": {
+            "name": "SAFE",
+            "color": "rgba(0, 159, 107, 1)",
+            "color_transparent": "rgba(0, 159, 107, 0.2)",
+            "layout": "default"
+        },
+        "euclid": {
+            "name": "EUCLID",
+            "color": "rgba(255, 211, 0, 1)",
+            "color_transparent": "rgba(255, 211, 0, 0.2)",
+            "layout": "default"
+        },
+        "keter": {
+            "name": "KETER",
+            "color": "rgba(196, 2, 51, 1)",
+            "color_transparent": "rgba(196, 2, 51, 0.2)",
+            "layout": "default"
+        },
+        "neutralized": {
+            "name": "NEUTRALIZED",
+            "color": "rgba(66, 66, 72, 1)",
+            "color_transparent": "rgba(66, 66, 72, 0.2)",
+            "layout": "stripped"
+        },
+        "pending": {
+            "name": "PENDING",
+            "color": "rgba(12, 12, 12, 1)",
+            "color_transparent": "rgba(12, 12, 12, 0.2)",
+            "layout": "stripped"
+        },
+        "explained": {
+            "name": "EXPLAINED",
+            "color": "rgba(12, 12, 12, 1)",
+            "color_transparent": "rgba(12, 12, 12, 0)",
+            "layout": "stripped"
+        },
+        "esoteric": {
+            "name": "ESOTERIC",
+            "color": "rgba(66, 66, 72, 1)",
+            "color_transparent": "rgba(66, 66, 72, 0.2)",
+            "layout": "default"
+        }
+    },
+    "secondary-class": {
+        "apollyon": {
+            "name": "APOLLYON",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "archon": {
+            "name": "ARCHON",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "cernunnos": {
+            "name": "CERNUNNOS",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "decommissioned": {
+            "name": "DECOMMISSIONED",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "hiemal": {
+            "name": "HIEMAL",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "tiamat": {
+            "name": "TIAMAT",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "ticonderoga": {
+            "name": "TICONDEROGA",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "thaumiel": {
+            "name": "THAUMIEL",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "uncontained": {
+            "name": "UNCONTAINED",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "yesod": {
+            "name": "YESOD",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "roll": {
+            "name": "ROLL",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "na": {
+            "name": "N/A",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "necropsar": {
+            "name": "NECROPSAR",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "marksur": {
+            "name": "MARKSUR",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "declassifed": {
+            "name": "DECLASSIFIED",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "gevurah": {
+            "name": "GEVURAH",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "eparch": {
+            "name": "EPARCH",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "embla": {
+            "name": "EMBLA",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "dryigioni": {
+            "name": "DRYIGIONI",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "continua": {
+            "name": "CONTINUA",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        },
+        "chhokmah": {
+            "name": "CHHOKMAH",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)"
+        }
+    },
+    "disruption-class": {
+        "1": {
+            "name": "DARK",
+            "color": "rgba(0, 159, 107, 1)",
+            "color_transparent": "rgba(0, 159, 107, 0.2)"
+        },
+        "2": {
+            "name": "VLAM",
+            "color": "rgba(0, 135, 189, 1)",
+            "color_transparent": "rgba(0, 135, 189, 0.2)"
+        },
+        "3": {
+            "name": "KENEQ",
+            "color": "rgba(255, 211, 0, 1)",
+            "color_transparent": "rgba(255, 211, 0, 0.2)"
+        },
+        "4": {
+            "name": "EKHI",
+            "color": "rgba(255, 109, 0, 1)",
+            "color_transparent": "rgba(255, 109, 0, 0.2)"
+        },
+        "5": {
+            "name": "AMIDA",
+            "color": "rgba(196, 2, 51, 1)",
+            "color_transparent": "rgba(196, 2, 51, 0.2)"
+        }
+    },
+    "risk-class": {
+        "1": {
+            "name": "NOTICE",
+            "color": "rgba(0, 159, 107, 1)",
+            "color_transparent": "rgba(0, 159, 107, 0.2)"
+        },
+        "2": {
+            "name": "CAUTION",
+            "color": "rgba(0, 135, 189, 1)",
+            "color_transparent": "rgba(0, 135, 189, 0.2)"
+        },
+        "3": {
+            "name": "WARNING",
+            "color": "rgba(255, 211, 0, 1)",
+            "color_transparent": "rgba(255, 211, 0, 0.2)"
+        },
+        "4": {
+            "name": "DANGER",
+            "color": "rgba(255, 109, 0, 1)",
+            "color_transparent": "rgba(255, 109, 0, 0.2)"
+        },
+        "5": {
+            "name": "CRITICAL",
+            "color": "rgba(196, 2, 51, 1)",
+            "color_transparent": "rgba(196, 2, 51, 0.2)"
+        }
+    }
+}

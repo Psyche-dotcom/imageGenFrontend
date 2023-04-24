@@ -1,0 +1,231 @@
+{
+    "name": "Default",
+    "credits": null,
+    "clearance-level": {
+        "1": {
+            "name": "Clearance Level 1",
+            "dname": "LEVEL1",
+            "abbr": "Unrestricted", 
+            "shortcode": "UR",
+            "color": "rgba(0, 159, 107, 1)",
+            "image": null,
+            "web_description": "Clearance Level 1 permits access to low-risk SCPs under supervision, without clearance for high-risk SCPs or sensitive projects."
+        },
+        "2": {
+            "name": "Clearance Level 2",
+            "dname": "LEVEL2",
+            "abbr": "Restricted", 
+            "shortcode": "RS",
+            "color": "rgba(0, 135, 189, 1)",
+            "image": null,
+            "web_description": "Clearance Level 2 grants access to a wider range of SCPs, but interaction with highly dangerous or sensitive SCPs still requires specific clearance from superiors."
+        },
+        "3": {
+            "name": "Clearance Level 3",
+            "dname": "LEVEL3",
+            "abbr": "Confidential", 
+            "shortcode": "CF",
+            "color": "rgba(255, 211, 0, 1)",
+            "image": null,
+            "web_description": "Clearance Level 3 permits broader access to SCPs and projects, including some high-risk ones, with authorization required for the most sensitive or dangerous ones."
+        },
+        "4": {
+            "name": "Clearance Level 4",
+            "dname": "LEVEL4",
+            "abbr": "Secret", 
+            "shortcode": "SC",
+            "color": "rgba(255, 109, 0, 1)",
+            "image": null,
+            "web_description": "Clearance Level 4 grants access to highly dangerous and sensitive SCPs and projects, requiring expertise, trust, authorization, and strict adherence to protocols for safety and security."
+        },
+        "5": {
+            "name": "Clearance Level 5",
+            "dname": "LEVEL5",
+            "abbr": "Top Secret", 
+            "shortcode": "TS",
+            "color": "rgba(196, 2, 51, 1)",
+            "image": null,
+            "web_description": "Clearance Level 5 grants near-unrestricted access to all SCPs and projects, requiring the highest expertise, trust, and authorization, and the ability to handle extreme stress and make critical decisions."
+        },
+        "6": {
+            "name": "Clearance Level 6",
+            "dname": "LEVEL6",
+            "abbr": "Cosmic Top Secret", 
+            "shortcode": "CTS",
+            "color": "rgba(12, 12, 12, 1)",
+            "image": "extras/galactic.jpg",
+            "web_description": "Clearance Level 6 is the highest security clearance granted only to the O5 Council and provides access to the most top-secret and dangerous SCPs and projects."
+        }
+    },
+    "containment-class": {
+        "safe": {
+            "name": "Safe",
+            "color": "rgba(0, 159, 107, 1)",
+            "color_transparent": "rgba(0, 159, 107, 0.2)",
+            "layout": "default",
+            "web_description": "SCPs classified as Safe are those that can be contained easily and pose little to no threat to Foundation personnel or the general public."
+        },
+        "euclid": {
+            "name": "Euclid",
+            "color": "rgba(255, 211, 0, 1)",
+            "color_transparent": "rgba(255, 211, 0, 0.2)",
+            "layout": "default",
+            "web_description": "SCPs classified as Euclid are those that are difficult to contain or understand fully, and have the potential to be dangerous or unpredictable."
+        },
+        "keter": {
+            "name": "Keter",
+            "color": "rgba(196, 2, 51, 1)",
+            "color_transparent": "rgba(196, 2, 51, 0.2)",
+            "layout": "default",
+            "web_description": "SCPs classified as Keter are those that are extremely dangerous and difficult to contain, and pose a significant threat to Foundation personnel and the general public."
+        },
+        "neutralized": {
+            "name": "Neutralized",
+            "color": "rgba(66, 66, 72, 1)",
+            "color_transparent": "rgba(66, 66, 72, 0.2)",
+            "layout": "stripped",
+            "web_description": "SCPs classified as Neutralized are those that are no longer anomalous, either due to being contained, destroyed, or otherwise rendered non-anomalous."
+        },
+        "pending": {
+            "name": "Pending",
+            "color": "rgba(12, 12, 12, 1)",
+            "color_transparent": "rgba(12, 12, 12, 0.2)",
+            "layout": "stripped",
+            "web_description": "SCPs classified as Pending are those that are currently under review by the Foundation, with their classification as Safe, Euclid, or Keter still undetermined."
+        },
+        "explained": {
+            "name": "Explained",
+            "color": "rgba(12, 12, 12, 1)",
+            "color_transparent": "rgba(12, 12, 12, 0)",
+            "layout": "stripped",
+            "web_description": "SCPs classified as Explained are those that have been fully understood and can be explained by natural or scientific means, and no longer require containment or special treatment."
+        },
+        "esoteric": {
+            "name": "Esoteric",
+            "color": "rgba(66, 66, 72, 1)",
+            "color_transparent": "rgba(66, 66, 72, 0.2)",
+            "layout": "default",
+            "web_description": "SCPs classified as Esoteric are those that are highly unusual or obscure, and require specialized knowledge or containment procedures to understand or contain properly."
+        }
+    },
+    "secondary-class": {
+        "apollyon": {
+            "name": "Appollyon",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)",
+            "web_description": "SCPs classified as Apollyon are those that are impossible to contain and pose a direct and existential threat to humanity, with no known means of stopping or preventing their effects."
+        },
+        "archon": {
+            "name": "Archon",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)",
+            "web_description": "SCPs classified as Archon are those that are designated to be used by the Foundation as weapons or tools against other SCPs, or to defend against outside threats."
+        },
+        "cernunnos": {
+            "name": "Cernunnos",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)",
+            "web_description": "SCPs classified as Cernunnos are those that have been abandoned by the Foundation, either due to their containment being deemed impossible, or due to a change in priorities or resources."
+        },
+        "decommissioned": {
+            "name": "Decommissioned",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)",
+            "web_description": "Decommissioned: SCPs classified as Decommissioned are those that have been deemed no longer anomalous or no longer pose a threat, and have been either destroyed, neutralized, or otherwise removed from containment."
+        },
+        "hiemal": {
+            "name": "Hiemal",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)",
+            "web_description": "SCPs classified as Hiemal are those that have properties related to cold or winter, and may require specialized containment procedures to prevent their effects from spreading."
+        },
+        "tiamat": {
+            "name": "Tiamat",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)",
+            "web_description": "SCPs classified as Tiamat are those that have properties related to chaos, destruction, or creation, and may require specialized containment procedures to prevent their effects from spreading."
+        },
+        "ticonderoga": {
+            "name": "Ticonderoga",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)",
+            "web_description": "SCPs classified as Ticonderoga are those that have properties related to war or conflict, and may require specialized containment procedures to prevent their effects from spreading."
+        },
+        "thaumiel": {
+            "name": "Thauemiel",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)",
+            "web_description": "SCPs classified as Thaumiel are those that are designated by the Foundation to be used as tools or weapons to contain or neutralize other SCPs, or to defend against outside threats."
+        },
+        "uncontained": {
+            "name": "Uncontained",
+            "color":"rgba(224, 224, 225, 1)",
+            "color_transparent": "rgba(224, 224, 225, 1)",
+            "web_description": "SCPs classified as Uncontained are those that are currently not in the possession or control of the Foundation, and may pose a significant threat to the general public or the Foundation's goals."
+        }
+    },
+    "disruption-class": {
+        "1": {
+            "name": "Dark",
+            "color": "rgba(0, 159, 107, 1)",
+            "color_transparent": "rgba(0, 159, 107, 0.2)",
+            "web_description": "The known or potential disruption is so low as to not be a concern. The object is essentially inert when not interacted with and may potentially only affect a single individual."
+        },
+        "2": {
+            "name": "Vlam",
+            "color": "rgba(0, 135, 189, 1)",
+            "color_transparent": "rgba(0, 135, 189, 0.2)",
+            "web_description": "The known or potential disruption would be localized to a small handful of people. The anomalous effects certainly do affect multiple people, but it would not extend very far."
+        },
+        "3": {
+            "name": "Keneq",
+            "color": "rgba(255, 211, 0, 1)",
+            "color_transparent": "rgba(255, 211, 0, 0.2)",
+            "web_description": "The known or potential disruption would be extended to a number of people roughly defined as a city. The anomalous effects could spread with fairly significant speed, fast enough as to cause concern."
+        },
+        "4": {
+            "name": "Ehki",
+            "color": "rgba(255, 109, 0, 1)",
+            "color_transparent": "rgba(255, 109, 0, 0.2)",
+            "web_description": "The known disruption would extend to roughly the size of a large metropolitan area to an entire country. The potential disruption could extend to the entire known world. The spread would be swift and difficult to manage."
+        },
+        "5": {
+            "name": "Amida",
+            "color": "rgba(196, 2, 51, 1)",
+            "color_transparent": "rgba(196, 2, 51, 0.2)",
+            "web_description": "This Disruption Class should be reserved for special circumstances when The Foundation is essentially 'declaring war' on an anomaly. When an anomaly poses such a dire threat to the status quo and The Foundation's veil that there is no other option than to use all possible options in order to Neutralize it."
+        }
+    },
+    "risk-class": {
+        "1": {
+            "name": "Notice",
+            "color": "rgba(0, 159, 107, 1)",
+            "color_transparent": "rgba(0, 159, 107, 0.2)",
+            "web_description": "The anomalous effects of the object are nearly non-existent to mild. An individual within close proximity of the object would not feel anything as a result of the object."
+        },
+        "2": {
+            "name": "Caution",
+            "color": "rgba(0, 135, 189, 1)",
+            "color_transparent": "rgba(0, 135, 189, 0.2)",
+            "Web_description": "The anomalous effects of the object are mild to moderate. An individual within close proximity of the object may feel mild effects from the anomalous object."
+        },
+        "3": {
+            "name": "Warning",
+            "color": "rgba(255, 211, 0, 1)",
+            "color_transparent": "rgba(255, 211, 0, 0.2)",
+            "web_description": "The anomalous effect of the object are moderate to significant. An individual within close proximity of the object will feel mild effects or may feel major effects from the anomalous object."
+        },
+        "4": {
+            "name": "Danger",
+            "color": "rgba(255, 109, 0, 1)",
+            "color_transparent": "rgba(255, 109, 0, 0.2)",
+            "web_description": "The anomalous effect of the object are significant to extreme. An individual within close proximity of the object will feel major effects or may feel extreme effects from the anomalous object."
+        },
+        "5": {
+            "name": "Critical",
+            "color": "rgba(196, 2, 51, 1)",
+            "color_transparent": "rgba(196, 2, 51, 0.2)",
+            "web_description": "This Risk Class should only be chosen when the object's effects will be near instant and/or extremely severe. It does not, necessarily, need to cause actual death, but death is incredibly likely and expected. Any individual nearby will feel the effects near instantly and the possibility of recovery is impossible."
+        }
+    }
+}
