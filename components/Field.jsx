@@ -17,7 +17,9 @@ const Field = ({
   };
   return (
     <div className="w-full flex gap-4 flex-col">
-      <label htmlFor={name}>{name}</label>
+      <label className="text-black" htmlFor={name}>
+        {name}
+      </label>
       <select
         id={name}
         value={selectedOption}

@@ -16,6 +16,7 @@ import Field5 from "../components/Field5";
 import "aos/dist/aos.css";
 import Aos from "aos";
 import { useEffect } from "react";
+import Field7 from "../components/Field7";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,10 +27,11 @@ export default function Generate() {
   const [selectedOption4, setSelectedOption4] = useState("");
   const [selectedOption5, setSelectedOption5] = useState("1");
   const [selectedOption6, setSelectedOption6] = useState("1");
-  const [selectedOption7, setSelectedOption7] = useState("0");
+  const [selectedOption7, setSelectedOption7] = useState("");
   const [selectedOption8, setSelectedOption8] = useState("default");
   const [selectedOption9, setSelectedOption9] = useState("png");
   const [selectedOption10, setSelectedOption10] = useState("1");
+  const [selectedOption11, setSelectedOption11] = useState("0");
   const [fetchImgUrl, setfetchImgUrl] = useState("");
   const [content, setcontent] = useState(true);
   const [errorState, seterrorState] = useState(false);
@@ -51,10 +53,11 @@ export default function Generate() {
           secondary: selectedOption4.toLowerCase(),
           disruption: selectedOption3,
           risk: selectedOption5,
-          theme: selectedOption7,
+          themes: selectedOption7,
           type: selectedOption9,
           iconpack: selectedOption8,
           image_size: selectedOption10,
+          opacityBackground: selectedOption11,
         }),
       });
 
@@ -94,14 +97,11 @@ export default function Generate() {
       </div>
 
       {content ? (
-        <div className="z-1000" data-aos="fade-zoom-in">
+        <div className="z-1000">
           <p className="flex text-center justify-center bg-black text-white mb-8 pb-6 pt-8 rounded-xl lg:p-4">
             Fill the field appropriately to generate your ACS bar Image
           </p>
-          <div
-            className="p-9 rounded-3xl border-2 border-gray-400"
-            data-aos="fade-left"
-          >
+          <div className="p-9 rounded-3xl border-2 border-gray-400">
             <form className="w-full">
               <div className="flex flex-col gap-8" id="stepUser1">
                 <TextInputField
@@ -111,7 +111,7 @@ export default function Generate() {
                   setstate={(e) => setSelectedOption2(e)}
                   errorState={errorState}
                   errorMessage={"Please enter a number between 100-9999"}
-                  name="Image Title"
+                  name="SCP Number"
                 />
                 <Field
                   name={"Containment Class"}
@@ -138,8 +138,10 @@ export default function Generate() {
                   selectedOption={selectedOption7}
                   setSelectedOption={(e) => setSelectedOption7(e)}
                 />
-                <Field4
+                <Field7
                   name={"Icon Pack"}
+                  opN1="Default"
+                  opN2="Extended Secondary Classes"
                   op1={"default"}
                   op2={"extended_secondary"}
                   selectedOption={selectedOption8}
@@ -150,11 +152,17 @@ export default function Generate() {
                   onClick={() => {
                     const stepUser1 = document.querySelector("#stepUser1");
                     const stepUser2 = document.querySelector("#stepUser2");
-                    if (selectedOption2.length < 3) {
+                    console.log(parseInt(selectedOption2));
+                    if (
+                      isNaN(parseInt(selectedOption2)) ||
+                      parseInt(selectedOption2) < 100 ||
+                      parseInt(selectedOption2) > 9999
+                    ) {
                       seterrorState(true);
                       stepUser1.style.display = "flex";
                     } else {
                       seterrorState(false);
+                      console.log(selectedOption7);
                       stepUser1.style.display = "none";
                       stepUser2.style.display = "flex";
                     }
@@ -185,7 +193,7 @@ export default function Generate() {
                     op9="Uncontained"
                     op10="Yesod"
                     op11="Roll"
-                    op12="N/A"
+                    op12="NA"
                     op13="Necropsar"
                     op14="Marksur"
                     op15="Declassifed"
@@ -214,7 +222,21 @@ export default function Generate() {
                     setSelectedOption={(e) => setSelectedOption4(e)}
                   />
                 )}
-
+                <FieldSelect2
+                  name={"Disruption Class"}
+                  op1={"1"}
+                  opN1="1-Dark"
+                  op2={"2"}
+                  opN2="2-Vlam"
+                  op3={"3"}
+                  opN3="3-Keneq"
+                  op4={"4"}
+                  opN4="4-Ehki"
+                  op5={"5"}
+                  opN5="5-Amida"
+                  selectedOption={selectedOption3}
+                  setSelectedOption={(e) => setSelectedOption3(e)}
+                />
                 <FieldSelect2
                   name={"Risk Level"}
                   op1={"1"}
@@ -288,21 +310,6 @@ export default function Generate() {
               </div>
               <div className=" hidden flex-col gap-8" id="stepUser3">
                 <FieldSelect2
-                  name={"Disruption Class"}
-                  op1={"1"}
-                  opN1="1-Dark"
-                  op2={"2"}
-                  opN2="2-Vlam"
-                  op3={"3"}
-                  opN3="3-Keneq"
-                  op4={"4"}
-                  opN4="4-Ehki"
-                  op5={"5"}
-                  opN5="5-Amida"
-                  selectedOption={selectedOption3}
-                  setSelectedOption={(e) => setSelectedOption3(e)}
-                />
-                <FieldSelect2
                   name={"Image Size"}
                   op1={"1"}
                   opN1="1-Default"
@@ -323,6 +330,15 @@ export default function Generate() {
                   op2={"svg"}
                   selectedOption={selectedOption9}
                   setSelectedOption={(e) => setSelectedOption9(e)}
+                />
+                <Field7
+                  name={"OpacityBackground"}
+                  op1={"0"}
+                  opN1="Transparent"
+                  op2={"1"}
+                  opN2="Not Transparent"
+                  selectedOption={selectedOption11}
+                  setSelectedOption={(e) => setSelectedOption11(e)}
                 />
                 <div className="flex flex-col gap-4">
                   <div className="flex flex-col md:flex-row gap-10 items-center">

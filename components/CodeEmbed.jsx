@@ -71,6 +71,7 @@ const CodeEmbed = () => {
         type: "png", // The image type are "svg" and "png"
         iconpack: "extended_secondary", // the iconpack are default and extended_secondary
         image_size: 1, // 1 is the default preview size of the generated image
+        opacityBackground: 0 // 0 is transparent while 1 is not transparent
       }),
     });
 
